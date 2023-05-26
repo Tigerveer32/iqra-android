@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gbr1"
+    tools:context="com.iqra.iqra.TebakHijaiyahActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latihan"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:text="SKOR : "
+        android:textColor="#f30"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/soal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/skor" />
+    <ImageView
+        android:id="@+id/soal"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_alif"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/jawaban1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/aa_ba"
+        android:layout_below="@+id/soal"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/jawaban2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/aa_alif"
+        android:layout_toLeftOf="@+id/jawaban1"
+        android:layout_below="@+id/soal"/>
+    <ImageButton
+        android:id="@+id/jawaban3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/aa_ta"
+        android:layout_toRightOf="@+id/jawaban1"
+        android:layout_below="@+id/soal"/>
+</RelativeLayout>
